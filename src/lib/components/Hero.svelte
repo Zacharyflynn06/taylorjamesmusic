@@ -11,7 +11,7 @@
 		<img
 			src="/Head Shot _ Stool.webp"
 			alt=""
-			class="h-full w-full object-cover object-top opacity-40"
+			class="h-full w-full object-cover object-top opacity-40 md:object-[center_10%]"
 		/>
 		<div
 			class="absolute inset-0 bg-linear-to-b from-background/60 via-background/40 to-background/60"
@@ -27,8 +27,8 @@
 		/>
 
 		<!-- Tagline -->
-		<p class="mb-10 max-w-xl text-lg leading-relaxed text-foreground/70 md:text-xl">
-			Soulful guitar. Genre-blending sound. 20+ years live.
+		<p class="mb-10 max-w-xl text-lg leading-relaxed font-medium text-foreground/80 md:text-xl">
+			Soulful guitar.<br />Genre-blending sound.<br />20+ years live.
 		</p>
 
 		<!-- CTAs -->

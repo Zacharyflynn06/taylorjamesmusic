@@ -72,7 +72,9 @@
 </svelte:head>
 
 <Hero />
-<About />
-<Music />
-<Shows />
-<Contact />
+<div class="mx-auto max-w-[1200px]">
+	<About />
+	<Music />
+	<Shows />
+	<Contact />
+</div>
