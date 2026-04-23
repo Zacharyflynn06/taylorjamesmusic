@@ -1,0 +1,44 @@
+# Netlify configuration.
+# Note: build command + publish dir are set by @sveltejs/adapter-netlify.
+# Leave those alone; only override redirects + cache headers here.
+
+# Redirect www -> apex so there's one canonical host.
+[[redirects]]
+  from = "https://www.taylorjamesmusic.com/*"
+  to   = "https://taylorjamesmusic.com/:splat"
+  status = 301
+  force = true
+
+# Long cache for the sizzle reel + poster (filenames are stable).
+[[headers]]
+  for = "/sizzle-reel.webm"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sizzle-reel.mp4"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sizzle-reel-poster.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Long cache for the OG/social image.
+[[headers]]
+  for = "/og-image.webp"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# SvelteKit emits hashed asset paths under /_app/immutable/* — safe to cache forever.
+[[headers]]
+  for = "/_app/immutable/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Static SVGs and favicon — long cache; update filename if you ever change them.
+[[headers]]
+  for = "/*.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
