@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Separator } from "$lib/components/ui/separator/index.js";
+	import { Separator } from '$lib/components/ui/separator/index.js';
+	import aboutImg from '$lib/assets/images/half-body.webp?enhanced';
 </script>
 
 <section id="about" class="py-20 md:py-28">
@@ -8,9 +9,10 @@
 			<!-- Photo -->
 			<div class="order-2 md:order-1">
 				<div class="relative overflow-hidden rounded-2xl">
-					<img
-						src="/Half Body.webp"
+					<enhanced:img
+						src={aboutImg}
 						alt="Taylor James"
+						sizes="(min-width: 768px) 600px, 100vw"
 						class="h-auto w-full object-cover"
 						loading="lazy"
 					/>
@@ -19,24 +21,20 @@
 
 			<!-- Bio text -->
 			<div class="order-1 md:order-2">
-				<h2 class="text-foreground mb-2 text-sm font-medium tracking-widest uppercase">
-					About
-				</h2>
-				<Separator class="bg-primary mb-6 w-12" />
-				<h3 class="text-foreground mb-6 text-3xl leading-tight md:text-4xl">
-					The Artist
-				</h3>
-				<p class="text-foreground/80 mb-6 text-base leading-relaxed md:text-lg">
-					Taylor James is a guitarist, singer-songwriter, and bandleader recognized for his
-					soulful style, expressive guitar work, and genre-blending sound rooted in folk,
-					acoustic, and modern influences. With more than 20 years of experience performing
-					across the country &amp; internationally, he creates music that is both refined and
-					adventurous.
+				<h2 class="mb-2 text-sm font-medium tracking-widest text-foreground uppercase">About</h2>
+				<Separator class="mb-6 w-12 bg-primary" />
+				<h3 class="mb-6 text-3xl leading-tight text-foreground md:text-4xl">The Artist</h3>
+				<p class="mb-6 text-base leading-relaxed text-foreground/80 md:text-lg">
+					Taylor James is a guitarist, singer-songwriter, and musical curator whose performances
+					live at the intersection of acoustic tradition and modern musical exploration. With over
+					two decades devoted to his craft, Taylor has developed a distinctive voice on the
+					guitar&mdash;expressive, dynamic, and deeply rooted in the language of American folk,
+					roots, and improvisational music.
 				</p>
-				<p class="text-foreground/80 text-base leading-relaxed md:text-lg">
-					In addition to his original artistry, Taylor is available for select concerts,
-					festivals, weddings, corporate events, and private performances, delivering
-					memorable live music experiences for audiences and clients alike.
+				<p class="text-base leading-relaxed text-foreground/80 md:text-lg">
+					In addition to his original artistry, Taylor is available for private performances,
+					festivals, corporate events, and weddings, delivering memorable live music experiences for
+					audiences and clients alike.
 				</p>
 			</div>
 		</div>

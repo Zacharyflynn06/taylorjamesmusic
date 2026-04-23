@@ -6,13 +6,20 @@
 	id="hero"
 	class="relative flex min-h-svh flex-col items-center justify-center overflow-hidden px-4"
 >
-	<!-- Background image -->
+	<!-- Background sizzle reel -->
 	<div class="absolute inset-0 -z-10">
-		<img
-			src="/Head Shot _ Stool.webp"
-			alt=""
-			class="h-full w-full object-cover object-top opacity-40 md:object-[center_10%]"
-		/>
+		<video
+			class="h-full w-full object-cover object-center opacity-40"
+			autoplay
+			loop
+			muted
+			playsinline
+			preload="metadata"
+			poster="/sizzle-reel-poster.jpg"
+		>
+			<source src="/sizzle-reel.webm" type="video/webm" />
+			<source src="/sizzle-reel.mp4" type="video/mp4" />
+		</video>
 		<div
 			class="absolute inset-0 bg-linear-to-b from-background/60 via-background/40 to-background/60"
 		></div>
@@ -23,13 +30,8 @@
 		<img
 			src="/TaylorJames.svg"
 			alt="Taylor James"
-			class="mb-8 h-auto w-full max-w-md md:max-w-lg"
+			class="mb-10 h-auto w-full max-w-md md:max-w-lg"
 		/>
-
-		<!-- Tagline -->
-		<p class="mb-10 max-w-xl text-lg leading-relaxed font-medium text-foreground/80 md:text-xl">
-			Soulful guitar.<br />Genre-blending sound.<br />20+ years live.
-		</p>
 
 		<!-- CTAs -->
 		<div class="flex flex-col gap-4 sm:flex-row">

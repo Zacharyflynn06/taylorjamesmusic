@@ -28,7 +28,7 @@
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://taylorjamesmusic.com" />
-	<meta property="og:image" content="https://taylorjamesmusic.com/Half Body.webp" />
+	<meta property="og:image" content="https://taylorjamesmusic.com/og-image.webp" />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="1600" />
 	<meta property="og:image:alt" content="Taylor James — guitarist and singer-songwriter" />
@@ -42,7 +42,7 @@
 		name="twitter:description"
 		content="Soulful guitar. Genre-blending sound. 20+ years live. Available for booking."
 	/>
-	<meta name="twitter:image" content="https://taylorjamesmusic.com/Half Body.webp" />
+	<meta name="twitter:image" content="https://taylorjamesmusic.com/og-image.webp" />
 	<meta name="twitter:image:alt" content="Taylor James — guitarist and singer-songwriter" />
 
 	<!-- JSON-LD Structured Data -->
@@ -51,7 +51,7 @@
 		'@type': 'MusicGroup',
 		name: 'Taylor James',
 		url: 'https://taylorjamesmusic.com',
-		image: 'https://taylorjamesmusic.com/Half Body.webp',
+		image: 'https://taylorjamesmusic.com/og-image.webp',
 		description:
 			'Taylor James is a guitarist, singer-songwriter, and bandleader recognized for his soulful style, expressive guitar work, and genre-blending sound rooted in folk, acoustic, and modern influences.',
 		genre: ['Folk', 'Acoustic', 'Singer-Songwriter'],
@@ -60,13 +60,6 @@
 			name: 'Taylor James',
 			jobTitle: 'Guitarist, Singer-Songwriter & Bandleader',
 			knowsAbout: ['Guitar', 'Songwriting', 'Live Performance']
-		},
-		event: {
-			'@type': 'Event',
-			name: 'Book Taylor James',
-			description:
-				'Available for select concerts, festivals, weddings, corporate events, and private performances.',
-			performer: { '@type': 'Person', name: 'Taylor James' }
 		}
 	})}</script>`}
 </svelte:head>
