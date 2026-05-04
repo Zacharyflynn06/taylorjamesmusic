@@ -7,9 +7,9 @@ backend:
     delete: 'Remove show "{{slug}}"'
 
 # Used by the editor preview pane.
-site_url: https://taylorjamesmusic.com
-display_url: https://taylorjamesmusic.com
-logo_url: https://taylorjamesmusic.com/only-logo.svg
+site_url: https://taylorjames.netlify.app
+display_url: https://taylorjames.netlify.app
+logo_url: https://taylorjames.netlify.app/only-logo.svg
 
 # No media uploads needed yet, but Sveltia requires a folder.
 media_folder: 'static/uploads'
