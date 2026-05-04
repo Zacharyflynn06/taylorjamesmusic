@@ -7,10 +7,9 @@
 		<title>Content Manager — Taylor James Music</title>
 	</head>
 	<body>
-		<!-- Netlify Identity widget: handles login + invite-token flow. -->
+		<!-- Netlify Identity widget: handles email/password login and invite flow. -->
 		<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-		<!-- Sveltia CMS: drop-in replacement for Decap, reads the same config. -->
-		<script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+		<!-- Decap CMS: still supports Git Gateway, no GitHub account needed. -->
+		<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 	</body>
 </html>
