@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: 'Add show "{{slug}}"'
+    update: 'Update show "{{slug}}"'
+    delete: 'Remove show "{{slug}}"'
+
+# Used by the editor preview pane.
+site_url: https://taylorjamesmusic.com
+display_url: https://taylorjamesmusic.com
+logo_url: https://taylorjamesmusic.com/only-logo.svg
+
+# No media uploads needed yet, but Sveltia requires a folder.
+media_folder: 'static/uploads'
+public_folder: '/uploads'
+
+collections:
+  - name: shows
+    label: 'Shows'
+    label_singular: 'Show'
+    folder: 'src/lib/data/shows'
+    create: true
+    delete: true
+    format: json
+    extension: json
+    slug: '{{date}}-{{venue}}'
+    summary: '{{date}} — {{venue}}, {{city}}'
+    sortable_fields: ['date', 'venue']
+    view_filters:
+      - label: 'Upcoming only'
+        field: date
+        pattern: '^(?!.*199|.*20[0-1]\d|.*202[0-5])'
+    fields:
+      - { label: 'Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm', picker_utc: false }
+      - { label: 'Venue', name: 'venue', widget: 'string', hint: 'e.g. The Blue Note' }
+      - { label: 'City', name: 'city', widget: 'string', hint: 'e.g. Nashville, TN' }
+      - { label: 'Ticket / event URL', name: 'ticketUrl', widget: 'string', required: false, hint: 'Optional. Link people click to buy tickets or RSVP.' }
+      - { label: 'Notes', name: 'notes', widget: 'text', required: false, hint: 'Optional. Set list, openers, anything special.' }

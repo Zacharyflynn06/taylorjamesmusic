@@ -19,6 +19,24 @@
 		<textarea name="message"></textarea>
 	</form>
 	<div style="display: contents">%sveltekit.body%</div>
+
+	<!--
+		Netlify Identity widget. Catches the invite/recovery token in the URL hash
+		(e.g. taylorjamesmusic.com/#invite_token=...) and shows the modal so the
+		editor can set their password. After login, redirect to /admin.
+	-->
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+	<script>
+		if (window.netlifyIdentity) {
+			window.netlifyIdentity.on('init', (user) => {
+				if (!user) {
+					window.netlifyIdentity.on('login', () => {
+						document.location.href = '/admin/';
+					});
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>
