@@ -9,5 +9,10 @@ export type Video = {
 };
 
 export const videos: Video[] = [
-	// { id: 'REPLACE_WITH_YOUTUBE_ID', title: 'Song or performance name' },
+	{ id: 'aqpaLZKz6rg', title: 'Taylor James — Live performance' },
+	{ id: 'ZtENq0il9n8', title: 'Taylor James — Live performance' },
+	{ id: '9MQcuEcSEk8', title: 'Taylor James — Live performance' },
+	{ id: 'mM8E9rfU5S4', title: 'Taylor James — Live performance' },
+	{ id: 'sOXeyjKuoeo', title: 'Taylor James — Live performance' },
+	{ id: 'ISJ5uO8_Cko', title: 'Taylor James — Live performance' }
 ];

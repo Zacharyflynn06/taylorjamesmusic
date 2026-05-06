@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Separator } from '$lib/components/ui/separator/index.js';
-	import aboutImg from '$lib/assets/images/half-body.webp?enhanced';
+	import aboutImg from '$lib/assets/images/head-shot-2.webp?enhanced';
 </script>
 
 <section id="about" class="py-20 md:py-28">
