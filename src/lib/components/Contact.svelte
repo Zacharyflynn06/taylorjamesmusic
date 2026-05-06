@@ -25,7 +25,6 @@
 			<div>
 				<h2 class="mb-2 text-sm font-medium tracking-widest text-foreground uppercase">Contact</h2>
 				<Separator class="mb-6 w-12 bg-primary" />
-				<h3 class="mb-6 text-3xl text-foreground md:text-4xl">Book Taylor James</h3>
 				<p class="mb-8 text-base leading-relaxed text-foreground/80 md:text-lg">
 					Available for public events, private events, festivals, corporate events, and weddings.
 					Please reach out to discuss your event!

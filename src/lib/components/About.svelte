@@ -23,7 +23,6 @@
 			<div class="order-1 md:order-2">
 				<h2 class="mb-2 text-sm font-medium tracking-widest text-foreground uppercase">About</h2>
 				<Separator class="mb-6 w-12 bg-primary" />
-				<h3 class="mb-6 text-3xl leading-tight text-foreground md:text-4xl">The Artist</h3>
 				<p class="mb-6 text-base leading-relaxed text-foreground/80 md:text-lg">
 					Taylor James is a guitarist, singer-songwriter, and musical curator whose performances
 					live at the intersection of acoustic tradition and modern musical exploration. With over

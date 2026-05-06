@@ -34,7 +34,6 @@
 		<div class="mb-12 text-center">
 			<h2 class="mb-2 text-sm font-medium tracking-widest text-foreground uppercase">Shows</h2>
 			<Separator class="mx-auto mb-6 w-12 bg-primary" />
-			<h3 class="mb-4 text-3xl text-foreground md:text-4xl">Upcoming Dates</h3>
 		</div>
 
 		{#if upcomingShows.length === 0}
