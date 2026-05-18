@@ -55,16 +55,16 @@
 				>
 					<input type="hidden" name="form-name" value="booking" />
 					<p class="hidden">
-						<label>Don’t fill this out: <input name="bot-field" /></label>
+						<label>Don’t fill this out: <input name="bot-field" autocomplete="off" tabindex="-1" /></label>
 					</p>
 					<div class="grid gap-5 sm:grid-cols-2">
 						<div class="flex flex-col gap-1.5">
 							<label for="name" class="text-sm font-medium text-foreground">Name</label>
-							<Input id="name" name="name" placeholder="Your name" required />
+							<Input id="name" name="name" autocomplete="name" placeholder="Your name" required />
 						</div>
 						<div class="flex flex-col gap-1.5">
 							<label for="email" class="text-sm font-medium text-foreground">Email</label>
-							<Input id="email" name="email" type="email" placeholder="you@example.com" required />
+							<Input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
 						</div>
 					</div>
 
@@ -90,6 +90,7 @@
 						<Textarea
 							id="message"
 							name="message"
+							autocomplete="off"
 							placeholder="Tell us about your event — date, location, and any details."
 							rows={5}
 							required
