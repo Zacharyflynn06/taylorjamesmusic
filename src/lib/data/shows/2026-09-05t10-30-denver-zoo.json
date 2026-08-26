@@ -2,6 +2,6 @@
   "date": "2026-09-05T10:30",
   "venue": "Denver Zoo",
   "city": "Denver, CO",
-  "ticketUrl": "Free with Admission",
-  "notes": "SET 1: 10:30am to 11:30am\nSET 2: 12pm to 1pm"
+  "notes": "SET 1: 10:30am to 11:30am\nSET 2: 12pm to 1pm",
+  "ticketNote": "Free with Admission"
 }

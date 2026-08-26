@@ -2,13 +2,14 @@
 // Files live at: src/lib/data/shows/*.json
 //
 // Each file is created/edited by Sveltia CMS and looks like:
-//   { "date": "2026-08-12T20:00", "venue": "The Blue Note", "city": "Nashville, TN", "ticketUrl": "...", "notes": "..." }
+//   { "date": "2026-08-12T20:00", "venue": "The Blue Note", "city": "Nashville, TN", "ticketUrl": "...", "ticketNote": "...", "notes": "..." }
 
 export type Show = {
 	date: string;
 	venue: string;
 	city: string;
 	ticketUrl?: string;
+	ticketNote?: string;
 	notes?: string;
 };
 

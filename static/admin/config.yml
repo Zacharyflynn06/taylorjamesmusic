@@ -35,5 +35,6 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime', date_format: 'YYYY-MM-DD', time_format: 'HH:mm', picker_utc: false }
       - { label: 'Venue', name: 'venue', widget: 'string', hint: 'e.g. The Blue Note' }
       - { label: 'City', name: 'city', widget: 'string', hint: 'e.g. Nashville, TN' }
-      - { label: 'Ticket / event URL', name: 'ticketUrl', widget: 'string', required: false, hint: 'Optional. Link people click to buy tickets or RSVP.' }
+      - { label: 'Ticket / event URL', name: 'ticketUrl', widget: 'string', required: false, hint: 'Optional. Must be a full link starting with https:// — e.g. https://denverzoo.org/events. For free events, leave this blank and say so in Notes.', pattern: ['^$|^(https?://|mailto:).+', 'Enter a full link starting with https:// (or mailto:). For free events leave this blank and use Notes instead.'] }
+      - { label: 'Ticket note', name: 'ticketNote', widget: 'string', required: false, hint: "Optional. Shown instead of a Tickets button when there's no link — e.g. 'Free with admission'." }
       - { label: 'Notes', name: 'notes', widget: 'text', required: false, hint: 'Optional. Set list, openers, anything special.' }
